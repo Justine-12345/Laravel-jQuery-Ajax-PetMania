@@ -1,6 +1,6 @@
 # PetMania: An Animal Shelter Web Application (Laravel with jQuery and Ajax)
 
-> Complete, built with  Laravel, jQuery, Ajax, JavaScript, CSS, HTML, and MySQL
+>  Built with  Laravel, jQuery, Ajax, JavaScript, CSS, HTML, and MySQL
 
 Welcome to PetMania, a compassionate online platform dedicated to rescuing and adopting stray dogs and cats. This non-profit animal shelter rescues, rehabilitates, and finds loving homes for animals in need.
 
