@@ -1,0 +1,2 @@
+﻿animal1,Male,12,breed1,Healthy,1
+animal2,Female,11,breed2,Healthy,1

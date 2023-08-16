@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-toggle {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-toggle input {
+  display: none;
+}
+
+.nav-toggle input + label {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-toggle input + label::before,
+.nav-toggle input + label::after {
+  content: "";
+  height: 1px;
+  background: darkcyan;
+  position: absolute;
+  left: 20%;
+  transition: 0.3s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.nav-toggle input + label::before {
+  top: 40%;
+  width: 50%;
+}
+
+.nav-toggle input + label::after {
+  top: 55%;
+  width: 60%;
+}
+
+.nav-toggle input:checked + label::before {
+  transform: rotate(45deg);
+  top: 50%;
+  width: 60%;
+}
+
+.nav-toggle input:checked + label::after {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+.sidenav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  margin-top: 70px;
+  background-color: aquamarine;
+  transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+.sidenav-links {
+  width: 80%;
+  height: 40px;
+  background-color: rgb(160, 240, 199);
+  margin: 1rem 0;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.nav-toggle input:checked + label + .sidenav {
+  width: 300px;
+}

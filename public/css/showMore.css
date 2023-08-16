@@ -1,0 +1,14 @@
+body, html {height: 100%; font-family: 'Arial'; font-size: 14px;}
+.conainer {width: 1000px; margin:100px auto;}
+.data_more_less_inner {overflow: hidden; margin-bottom: 20px; position: relative;}
+.action_less {display: none;}
+.less_active .action_less {display: inline-block;}
+.less_active .action_more {display: none;}
+.data_more_less:not(.less_active):not(.action_disabled) .data_more_less_inner:after {content: ''; display: block; position: absolute; bottom: 0; left: 0; width: 100%; background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(217,228,244, 0.8) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(217,228,244, 0.8) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); height: 80px;}
+.data_more_less.action_disabled .more_less_action {display: none;}
+h1 {margin-bottom: 0px;}
+.btn {color: #444; text-decoration: none; border: 1px solid #444; padding: 7px 15px;}
+.btn:hover {background: #444; color: #fff;}
